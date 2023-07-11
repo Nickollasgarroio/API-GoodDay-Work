@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "curl": "^0.1.4",
     "yarn": "^1.22.19"
   },
   "type": "module"

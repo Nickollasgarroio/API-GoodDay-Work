@@ -5,7 +5,10 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "yarn.lock": true
   },
-  "hide-files.files": []
+  "hide-files.files": ["package-lock.json", "package.json", "yarn.lock"]
 }
