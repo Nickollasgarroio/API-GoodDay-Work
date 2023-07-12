@@ -4,7 +4,7 @@
  * @param priority Priority da Tarefa
  * 
  */
-export default function postGoodDay(nomeTarefa, priority) {
+export default function postGoodDay(nomeTarefa, description, priority) {
     fetch("https://api.goodday.work/2.0/tasks?gd-api-token=4768dcf94bf04f69a7213f0b060173fe",
         {
             method: "POST",
@@ -17,15 +17,16 @@ export default function postGoodDay(nomeTarefa, priority) {
                     title: nomeTarefa,
                     fromUserId: 'i1Ml2c',
                     priority: priority,
+                    message: description
                 }
             )
         })
 
         .then(res => {
-            if (res.ok) console.log("Success");
-            else console.log("Not Success");
+            if (res.ok) console.log("(GoodDay.work) - Success: Task Created");
+            else console.log("(GoodDay.work) - Not Success: Task Not Created");
             return res.json()
         })
-        .then(data => console.log(data))
+        // .then(data => console.log(data))
         .catch((error) => { console.log(error); })
 }

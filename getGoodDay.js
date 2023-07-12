@@ -8,10 +8,10 @@ export default function getGoodDay() {
         })
 
         .then(res => {
-            if (res.ok) console.log("Success");
-            else console.log("Not Success");
+            if (res.ok) console.log("(GoodDay.work) Success: Tasks Consultadas");
+            else console.log("(GoodDay.work) Not Success: Task Não Consultadas");
             return res.json()
         })
-        .then(data => console.log(data))
-        .catch((error) => { console.log(error); })
+    // .then(data => console.log(data))
 }
+
