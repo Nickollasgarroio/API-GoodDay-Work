@@ -1,5 +1,5 @@
 export default async function hookDiscord(titulo, description, priority) {
-    await fetch("https://discord.com/api/webhooks/1128071666115805265/vVJVJ43uhl2vEZyiIF8t-RAe--ab94nGzdpQ-Hrd9ksrTkRklgQq7kVww5ZsB2j3W03G", {
+    await fetch("https://discord.com/api/webhooks/1128810109871599696/pDtul6qt_FRzlZuDMn86fxumk5FF9imwsPYa0eLNH_7TDzEsPHD3agLahnPSbq2qdK3u", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -17,8 +17,8 @@ export default async function hookDiscord(titulo, description, priority) {
         })
     })
         .then(res => {
-            if (res.ok) console.log("Success: Webhook Sent");
-            else console.log("Not Success: Webhook Not Sent");
+            if (res.ok) console.log("(Discord) Success: Webhook Sent");
+            else console.log("(Discord) Not Success: Webhook Not Sent");
         })
         .catch(err => console.log(err))
 }
