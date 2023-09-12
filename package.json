@@ -1,6 +1,19 @@
 {
   "dependencies": {
+    "curl": "^0.1.4",
+    "http-server": "^14.1.1",
     "yarn": "^1.22.19"
   },
-  "type": "module"
+  "type": "module",
+  "name": "api-goodday-work",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {}
 }
